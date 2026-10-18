@@ -1,0 +1,10 @@
+{
+  "entity.monstruosmod.monstruo_1": "Araña Boquiabierta",
+  "entity.monstruosmod.monstruo_2": "Garras Sonrientes",
+  "entity.monstruosmod.monstruo_3": "El Sonrisas",
+  "entity.monstruosmod.monstruo_4": "El Alto",
+  "item.monstruosmod.monstruo_1_spawn_egg": "Huevo de Araña Boquiabierta",
+  "item.monstruosmod.monstruo_2_spawn_egg": "Huevo de Garras Sonrientes",
+  "item.monstruosmod.monstruo_3_spawn_egg": "Huevo de El Sonrisas",
+  "item.monstruosmod.monstruo_4_spawn_egg": "Huevo de El Alto"
+}

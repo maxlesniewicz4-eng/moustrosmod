@@ -1,0 +1,34 @@
+MOD DE MONSTRUOS - Minecraft Java 1.20.1 (Fabric)
+=================================================
+
+QUE HACE
+- 4 monstruos con tus imagenes (cartones 3D que se balancean al caminar).
+- Te persiguen y te atacan: 10 de dano = 5 corazones = LA MITAD de tu vida (en dificultad Normal).
+- "Te comen": al golpearte suena que te comen/eructan y se curan.
+- SUSTO (jumpscare): cuando se acercan, su cara aparece a pantalla completa con temblor,
+  grito, oscuridad y lentitud.
+- Aparecen de noche/oscuridad en el Overworld y hay huevos de aparicion en el creativo
+  (pestaña "Huevos de aparicion").
+
+COMO CREAR EL .JAR (1 vez)
+1. Instala Java 17 o superior (JDK).
+2. Descarga la plantilla oficial: https://github.com/FabricMC/fabric-example-mod
+   (rama 1.20) y descomprimela.
+3. Copia estas carpetas/archivos de este ZIP encima de la plantilla (reemplazando):
+      src/   build.gradle   gradle.properties   settings.gradle
+4. En esa carpeta abre una terminal y ejecuta:
+      Windows:  gradlew.bat build
+      Mac/Linux: ./gradlew build
+5. Tu mod queda en:  build/libs/monstruosmod-1.0.0.jar
+   (NO uses el que termina en -sources.jar)
+
+COMO USARLO
+- Instala Fabric Loader para 1.20.1 y el Fabric API.
+- Pon monstruosmod-1.0.0.jar y fabric-api en la carpeta .minecraft/mods
+- Para probar: modo creativo > huevos de aparicion.
+
+CAMBIAR COSAS
+- Dano, vida, velocidad: src/main/java/com/monstruos/MonstruoEntity.java (createAttributes)
+- Tiempo entre sustos: scareCooldown = 200 (ticks) en MonstruoEntity.java
+- Tamaños: MonstruosMod.java
+- Imagenes: src/main/resources/assets/monstruosmod/textures/

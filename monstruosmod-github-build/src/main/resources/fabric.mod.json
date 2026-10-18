@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "monstruosmod",
+  "version": "${version}",
+  "name": "Mod de Monstruos",
+  "description": "4 monstruos de terror con sustos (jumpscare), ataques que quitan la mitad de los corazones y que te comen.",
+  "authors": ["Tu nombre"],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.monstruos.MonstruosMod"],
+    "client": ["com.monstruos.client.MonstruosClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}

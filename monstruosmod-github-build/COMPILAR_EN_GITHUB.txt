@@ -1,0 +1,20 @@
+COMO OBTENER EL .JAR REAL (sin instalar Gradle en tu PC)
+
+1. Entra en https://github.com/new y crea un repositorio nuevo (por ejemplo: monstruosmod).
+   Puedes marcarlo como Private si prefieres.
+2. Descomprime este ZIP en tu ordenador.
+3. Sube TODO el contenido de la carpeta a la raíz del repositorio, incluidos:
+   - .github/workflows/build.yml
+   - build.gradle
+   - gradle.properties
+   - settings.gradle
+   - src/
+   No subas la carpeta contenedora externa; sube esos archivos y carpetas directamente.
+4. En GitHub, abre la pestaña Actions.
+5. Selecciona "Compilar mod de monstruos" y pulsa "Run workflow" si no ha empezado ya.
+6. Espera a que la ejecución termine con un tick verde.
+7. Abre esa ejecución y baja a Artifacts. Descarga "monstruosmod-jar".
+8. Dentro encontrarás monstruosmod-1.0.0.jar. NO uses ningún archivo que termine en -sources.jar.
+9. Pon el JAR normal en .minecraft/mods junto con Fabric API, con Minecraft 1.20.1 y Java 17+.
+
+Si la compilación falla, abre la ejecución de Actions, copia el error de la parte roja y compártelo aquí.
